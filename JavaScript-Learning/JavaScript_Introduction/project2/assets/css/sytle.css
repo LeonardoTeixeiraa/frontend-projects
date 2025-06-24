@@ -1,0 +1,49 @@
+body {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(-45deg, #9f27f0, #6107f3, #532875, #2d0157);
+  background-size: 400% 400%;
+  background-position: 0% 80%;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: backgroundTransition 7s ease-in-out infinite;
+}
+
+@keyframes backgroundTransition {
+  0% {
+    background-position: 0% 80%;
+  }
+  50% {
+    background-position: 100% 20%;
+  }
+  100% {
+    background-position: 0% 80%;
+  }
+}
+
+.title {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#currentNumber {
+  font-size: 2em;
+}
