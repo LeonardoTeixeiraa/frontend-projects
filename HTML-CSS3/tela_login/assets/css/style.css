@@ -44,6 +44,12 @@ button {
   color: white;
   font-weight: 700;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: scale 0.4s ease-in-out;
+}
+
+button:hover {
+  scale: 105%;
 }
 
 input {
@@ -51,6 +57,12 @@ input {
   border-radius: 10px;
   border: none;
   background-color: #f1f1f1;
+  transition: scale 0.5s ease-in-out;
+}
+
+input:hover {
+  scale: 103%;
+  border: solid 1px #404040;
 }
 
 a {
@@ -74,11 +86,16 @@ a {
 }
 
 .titulo {
+  align-items: center;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
 
-.esqueceu-senha{
+.esqueceu-senha {
   text-align: center;
+}
+
+#lembrar{
+  cursor: pointer;
 }
