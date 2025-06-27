@@ -1,0 +1,76 @@
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes background-transform {
+  from {
+    background-color: #e2e2e2;
+  }
+  to {
+     background-color: greenyellow;
+  }
+}
+
+@keyframes icon-appear {
+  from {
+    display: none;
+  }
+  to {
+     display: flex;
+  }
+}
+
+body {
+  height: 100vh;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.btn-primary {
+  height: 56px;
+  width: 250px;
+  background-color: #e2e2e2;
+  border-radius: 30rem;
+  padding: 12px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation-name: background-transform ;
+  animation-duration: 400ms;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  position: relative;
+}
+
+.loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  border-bottom-color: transparent;
+  animation: spin 1s linear infinite;
+}
+
+.wrapper .check-icon{
+    height: 32px;
+    width: 32px;
+    background-color: greenyellow;
+    position: absolute;
+    animation-name: icon-appear;
+    animation-duration: 400ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 3s;
+    animation-fill-mode: backwards;
+}
