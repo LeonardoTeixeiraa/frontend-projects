@@ -2,13 +2,16 @@ function validaArray(arr, num) {
   try {
     if (!arr || !num) throw new ReferenceError("Envie os parâmetros");
 
-    if (typeof arr !== 'object')
+    if (typeof arr !== "object")
       throw new TypeError("O Array precisa ser do tipo Object");
 
-    if (typeof num !== 'number')
+    if (typeof num !== "number")
       throw new TypeError("O Array precisa ser do tipo number");
 
-    if (arr.length !== num) throw new RangeError("Tamanho inválido, informe um numero correspondente ao comprimento do array");
+    if (arr.length !== num)
+      throw new RangeError(
+        "Tamanho inválido, informe um numero correspondente ao comprimento do array"
+      );
 
     return arr;
   } catch (e) {
@@ -27,6 +30,6 @@ function validaArray(arr, num) {
   }
 }
 
-console.log(validaArray([],2));
-console.log(validaArray([1,2], 5));
-console.log(validaArray([1,2,3,4,5], 5));
+console.log(validaArray([], 2));
+console.log(validaArray([1, 2], 5));
+console.log(validaArray([1, 2, 3, 4, 5], 5));
