@@ -5,6 +5,7 @@ let numeroLimite = 10;
 function exibirTextoNaTela(tag, texto) {
   let campo = document.querySelector(tag);
   campo.innerHTML = texto;
+  responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
 
 function exibirMensagemInicial() {
@@ -33,7 +34,7 @@ function verificarChute() {
     } else {
       exibirTextoNaTela("p", "O número secreto é maior");
     }
-    tentativas++;
+    tentativas++; 
   }
   limparCampo();
 }
