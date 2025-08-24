@@ -16,11 +16,12 @@ nav ul {
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
-  transition: background 0.3s;
+  transition: background 0.3s ease-in-out;
 }
 
 .btn-link:hover {
   background-color: #494949;
+  scale: 105%;
 }
 
 .costela-bafo{
