@@ -8,13 +8,13 @@ Este repositório é um portfólio pessoal com exercícios voltados para o apren
 - **[to-do list](./JavaScript-Learning/Javascript_Introduction/to-do-list)**
   Desenvolvimento de uma to-do List utilizando **HTML5**, **CSS3** e **JS**
   
-- **[tela_login](./tela_login)**  
+- **[tela_login](./HTML-CSS3/tela_login)**  
   Desenvolvimento e estilização de uma tela de login moderna e responsiva utilizando apenas **HTML5** e **CSS3**.
 
-- **[atividade-portfolio-HTML-CSS](./atividade-portfolio-HTML-CSS)**  
+- **[atividade-portfolio-HTML-CSS](./HTML-CSS3/atividade-portfolio-HTML-CSS)**  
   Protótipo de um portfólio profissional construído com **HTML5** e **CSS3**.
 
-- **[portfolio-pessoal](./portfolio-pessoal)**  
+- **[portfolio-pessoal](./HTML-CSS3/portfolio-pessoal)**  
   Portfólio pessoal que explora **animações na capa** e boas práticas de estilização com **HTML5** e **CSS3**.
 
 ---
