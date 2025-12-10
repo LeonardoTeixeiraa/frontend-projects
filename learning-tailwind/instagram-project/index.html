@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instagram</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+
+  <body class="bg-white">
+    <main class="h-screen w-screen grid grid-cols-1 md:grid-cols-2 grid-rows-6">
+      <!-- Imagem principal -->
+      <section class="row-span-5 md:flex justify-end items-center hidden">
+        <img class="w-96" src="./img/insta-img.png" alt="Mockup Instagram" />
+      </section>
+
+      <!-- Formulário -->
+      <section class="row-span-5 flex flex-col justify-center items-center">
+        <form
+          class="w-80 flex flex-col justify-center items-center border border-slate-300 rounded-sm px-10 py-4 gap-5 bg-white"
+        >
+          <img class="w-52" src="./img/insta-logo.png" alt="Instagram Logo" />
+
+          <input
+            class="bg-slate-50 h-9 w-full pl-3 border border-slate-300 rounded-sm"
+            type="text"
+            placeholder="Número de telefone, nome de usuário ou email"
+          />
+          <input
+            class="bg-slate-50 h-9 w-full pl-3 border border-slate-300 rounded-sm"
+            type="password"
+            placeholder="Senha"
+          />
+
+          <button
+            class="bg-blue-500 w-full rounded-md h-8 text-slate-50 hover:bg-blue-400 cursor-pointer"
+          >
+            Entrar
+          </button>
+
+          <a class="text-blue-800 font-bold text-sm cursor-pointer" href="#"
+            >Logar com o Facebook</a
+          >
+          <a class="text-blue-800 text-xs cursor-pointer" href="#">
+            Esqueci minha senha
+          </a>
+        </form>
+
+        <div class="border border-slate-300 w-80 my-4 text-center py-4">
+          <p>
+            Não tem uma conta?
+            <a href="#" class="text-blue-400 font-bold">Cadastrar-se</a>
+          </p>
+        </div>
+
+        <p class="text-sm">Baixe o aplicativo</p>
+
+        <div class="flex gap-2 mt-4">
+          <img class="h-10" src="./img/apple.png" alt="App Store" />
+          <img class="h-10" src="./img/google.png" alt="Google Play" />
+        </div>
+      </section>
+
+      <!-- Rodapé -->
+      <footer class="row-span-1 col-span-2 mt-4">
+        <ul class="flex flex-wrap gap-5 justify-center">
+          <li class="text-slate-800 text-sm">Meta</li>
+          <li class="text-slate-800 text-sm">About</li>
+          <li class="text-slate-800 text-sm">Blog</li>
+          <li class="text-slate-800 text-sm">Jobs</li>
+          <li class="text-slate-800 text-sm">Help</li>
+          <li class="text-slate-800 text-sm">API</li>
+          <li class="text-slate-800 text-sm">Privacy</li>
+          <li class="text-slate-800 text-sm">Terms</li>
+          <li class="text-slate-800 text-sm">Locations</li>
+          <li class="text-slate-800 text-sm">Instagram Lite</li>
+          <li class="text-slate-800 text-sm">Meta AI</li>
+          <li class="text-slate-800 text-sm">Threads</li>
+          <li class="text-slate-800 text-sm">Contact Uploading & Non-Users</li>
+          <li class="text-slate-800 text-sm">Meta Verified</li>
+        </ul>
+
+        <ul class="flex flex-wrap gap-5 justify-center mt-6">
+          <li class="text-slate-800 text-sm">English</li>
+          <li class="text-slate-800 text-sm">© 2025 Instagram from Meta</li>
+        </ul>
+      </footer>
+    </main>
+  </body>
+</html>
